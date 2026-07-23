@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчёт окупаемости энергосбережения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="calc-header">
+        <div class="calc-logo"><span>⚡</span> Калькулятор</div>
+    <button type="button" class="theme-toggle-btn">Сменить тему</button>
+    </header>
+    <main class="calc-container">
+        <h1>Калькулятор энергоэффективности оборудования</h1>
+        <div class="calc-wrapper">
+            <form class="calc-form">
+                <div class="input-group">
+                    <label for="old-power">Мощность старого оборудования (кВт) </label>
+                    <input type="number" id="old-power" value="10" min="0" step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="new-power">Мощность нового оборудования (кВт)</label>
+                    <input type="number" id="new-power" value="4" min="0" step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="work-hours">Время работы оборудования в сутки (часов)</label>
+                    <input type="number" id="work-hours" value="12" min="0" max="24" step="1">
+                </div>
+                <div class="input-group">
+                    <label for="energy-tariff">Тариф на электроэнергию (руб/кВт·ч)</label>
+                    <input type="number" id="energy-tariff" value="7.5" min="0" step="0.01">
+                </div>
+            </form>
+            <div class="calc-results">
+                <div class="result-card">
+                    <h3>Сэкономлено энергии за год</h3>
+                    <p><span id="res-energy">0</span> кВт·ч</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Экономия бюджета в месяц</h3>
+                    <p><span id="res-month">0</span> ₽</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Экономия бюджета в год</h3>
+                    <p><span id="res-year">0</span> ₽</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer class="calc-footer">
+<p>&copy; 2026 Все права защищены</p>
+</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
