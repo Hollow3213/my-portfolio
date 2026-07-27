@@ -99,8 +99,12 @@ header {
   justify-content: space-between;
   padding: 1.25rem 2.5rem;
   width: 100%;
-  background-color: var(--background-color2);
-  backdrop-filter: blur(9999px);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(228, 228, 231, 0.08);
   position: fixed;
   top: 0;
@@ -260,7 +264,7 @@ h1 {
 
 .contacts-text {
   font-size: 1.1rem;
-  max-width: 35rem;
+  max-width: 40rem;
   text-align: center;
 }
 
