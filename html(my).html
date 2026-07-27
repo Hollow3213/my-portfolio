@@ -1,161 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap"
-        rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
     Ф
-</head>
+  </head>
 
-<body class="dark-theme">
+  <body class="dark-theme">
     <header>
-        <div class="logo">
-            🧬 <span class="gradient-text">Сайт-портфолио</span>
-        </div>
-        <nav>
-            <a href="#about" class="nav-link">О себе</a>
-            <a href="#projects" class="nav-link">Мои проекты</a>
-            <a href="#contacts" class="nav-link">Контакты</a>
-        </nav>
-        <div class="theme-switcher-wrapper">
-            <span class="icon-sun">🌙</span>
-            <label class="theme-switch">
-                <input type="checkbox" id="checkbox">
-                <div class="slider round"></div>
-            </label>
-            <span class="icon-moon">☀️</span>
-        </div>
+      <div class="logo">
+        🧬 <span class="gradient-text">Сайт-портфолио</span>
+      </div>
+      <nav>
+        <a href="#about" class="nav-link">О себе</a>
+        <a href="#projects" class="nav-link">Мои проекты</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <div class="theme-switcher-wrapper">
+        <span class="icon-sun">🌙</span>
+        <label class="theme-switch">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <span class="icon-moon">☀️</span>
+      </div>
     </header>
     <main>
-        <section id="about">
-            <div class="hero-content">
-                <h1>Привет! Я <span class="gradient-text">Фронтенд-разработчик</span></h1>
-                <p>
-                    Имею высшее инженерное образование в сфере энергетики и опыт работы ведущим инженером в
-                    «Воронежэнерго». В рамках своей должности занимаюсь контролем исполнения договоров и оптимизацией
-                    процессов с помощью автоматизации расчетов в Excel. Этот бэкграунд развил во мне аналитический склад
-                    ума, системное мышление и навыки координации сложных проектов. Сейчас я осознанно перехожу в
-                    веб-разработку: строю крепкую базу на freeCodeCamp и готовлюсь к коммерческой практике в Яндекс
-                    Практикуме. Ищу стажировку или Junior-позицию во фронтенд-разработке в Воронеже.
-                </p>
-                <button type="button" class="hero-button">Написать</button>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Мои проекты</h2>
+      <section id="about">
+        <div class="hero-content">
+          <h1>
+            Привет! Я <span class="gradient-text">Фронтенд-разработчик</span>
+          </h1>
+          <p>
+            Имею высшее инженерное образование в сфере энергетики и опыт работы
+            ведущим инженером в «Воронежэнерго». В рамках своей должности
+            занимаюсь контролем исполнения договоров и оптимизацией процессов с
+            помощью автоматизации расчетов в Excel. Этот бэкграунд развил во мне
+            аналитический склад ума, системное мышление и навыки координации
+            сложных проектов. Сейчас я осознанно перехожу в веб-разработку:
+            строю крепкую базу на freeCodeCamp и готовлюсь к коммерческой
+            практике в Яндекс Практикуме. Ищу стажировку или Junior-позицию во
+            фронтенд-разработке в Воронеже.
+          </p>
+          <button type="button" class="hero-button">Написать</button>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Мои проекты</h2>
 
-            <div class="carousel-container"
-                style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+        <div
+          class="carousel-container"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+          "
+        >
+          <button type="button" class="carousel-btn prev-btn">◀</button>
 
-                <button type="button" class="carousel-btn prev-btn">◀</button>
-
-                <div class="carousel-window" style="overflow: hidden; max-width: 24rem;">
-
-                    <div id="projects-carousel" style="display: flex; gap: 2rem; transition: transform 0.4s ease;">
-
-                        <article class="project-card">
-                            <div class="project-image-box">
-                                <img src="https://placeholder.com" alt="Превью проекта">
-                            </div>
-                            <div class="project-content">
-                                <h3>Название проекта 1</h3>
-                                <p>Краткое описание того, что делает этот сайт и какую задачу он решает.</p>
-                                <div class="project-tags">
-                                    <span>HTML5</span>
-                                    <span>CSS3</span>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" target="_blank" class="btn-live">Смотреть сайт</a>
-                                <a href="#" target="_blank" class="link-github">Код на GitHub →</a>
-                            </div>
-                        </article>
-
-
-                        <article class="project-card">
-                            <div class="project-image-box">
-                                <img src="https://placeholder.com" alt="Превью проекта">
-                            </div>
-                            <div class="project-content">
-                                <h3>Название проекта 2</h3>
-                                <p>Краткое описание того, что делает этот сайт и какую задачу он решает.</p>
-                                <div class="project-tags">
-                                    <span>HTML5</span>
-                                    <span>CSS3</span>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" target="_blank" class="btn-live">Смотреть сайт</a>
-                                <a href="#" target="_blank" class="link-github">Код на GitHub →</a>
-                            </div>
-                        </article>
-
-
-                        <article class="project-card">
-                            <div class="project-image-box">
-                                <img src="https://placeholder.com" alt="Превью проекта">
-                            </div>
-                            <div class="project-content">
-                                <h3>Название проекта 3</h3>
-                                <p>Краткое описание того, что делает этот сайт и какую задачу он решает.</p>
-                                <div class="project-tags">
-                                    <span>HTML5</span>
-                                    <span>CSS3</span>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="project-actions">
-                                <a href="#" target="_blank" class="btn-live">Смотреть сайт</a>
-                                <a href="#" target="_blank" class="link-github">Код на GitHub →</a>
-                            </div>
-                        </article>
-
-                    </div>
-
+          <div
+            class="carousel-window"
+            style="overflow: hidden; max-width: 24rem"
+          >
+            <div
+              id="projects-carousel"
+              style="display: flex; gap: 2rem; transition: transform 0.4s ease"
+            >
+              <article class="project-card">
+                <div class="project-image-box">
+                  <img src="https://placeholder.com" alt="Превью проекта" />
                 </div>
-                <button type="button" class="carousel-btn next-btn">▶</button>
+                <div class="project-content">
+                  <h3>Название проекта 1</h3>
+                  <p>
+                    Краткое описание того, что делает этот сайт и какую задачу
+                    он решает.
+                  </p>
+                  <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn-live">Смотреть сайт</a>
+                  <a href="#" target="_blank" class="link-github"
+                    >Код на GitHub →</a
+                  >
+                </div>
+              </article>
 
+              <article class="project-card">
+                <div class="project-image-box">
+                  <img src="https://placeholder.com" alt="Превью проекта" />
+                </div>
+                <div class="project-content">
+                  <h3>Название проекта 2</h3>
+                  <p>
+                    Краткое описание того, что делает этот сайт и какую задачу
+                    он решает.
+                  </p>
+                  <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn-live">Смотреть сайт</a>
+                  <a href="#" target="_blank" class="link-github"
+                    >Код на GitHub →</a
+                  >
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-image-box">
+                  <img src="https://placeholder.com" alt="Превью проекта" />
+                </div>
+                <div class="project-content">
+                  <h3>Название проекта 3</h3>
+                  <p>
+                    Краткое описание того, что делает этот сайт и какую задачу
+                    он решает.
+                  </p>
+                  <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <a href="#" target="_blank" class="btn-live">Смотреть сайт</a>
+                  <a href="#" target="_blank" class="link-github"
+                    >Код на GitHub →</a
+                  >
+                </div>
+              </article>
             </div>
-        </section>
-        <section id="contacts">
-            <h2>Давайте создадим что-то вместе</h2>
-            <p class="contacts-text">
-                Если вы хотите обсудить стажировку или учебный проект в Воронеже — пишите!
-            </p>
-        </section>
-
+          </div>
+          <button type="button" class="carousel-btn next-btn">▶</button>
+        </div>
+      </section>
+      <section id="contacts">
+        <h2>Давайте создадим что-то вместе</h2>
+        <p class="contacts-text">
+          Если вы хотите обсудить стажировку или учебный проект в Воронеже —
+          пишите!
+        </p>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer-copy">
-            © 2026. Код написан вручную, дизайн и архитектура в соавторстве с AI-ассистентом
-        </div>
-        <div class="footer-socials">
-            <a href="#" class="social-link" target="_blank">Telegram</a>
-            <a href="#" class="social-link" target="_blank">GitHub</a>
-            <a href="#" class="social-link" target="_blank">Vk</a>
-        </div>
+      <div class="footer-copy">
+        © 2026. Код написан вручную, дизайн и архитектура в соавторстве с
+        AI-ассистентом
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-link" target="_blank">Telegram</a>
+        <a href="#" class="social-link" target="_blank">GitHub</a>
+        <a href="#" class="social-link" target="_blank">Vk</a>
+      </div>
     </footer>
-<div class="modal-overlay modal-hidden">
-    <div class="modal-card">
+    <div class="modal-overlay modal-hidden">
+      <div class="modal-card">
         <button type="button" class="modal-close-btn">×</button>
         <h3 class="modal-title">Контакты</h3>
         <div class="modal-links">
-            <a href="#" target="_blank" class="modal-link">Email</a>
-            <a href="#" target="_blank" class="modal-link">Telegram</a>
-            <a href="#" target="_blank" class="modal-link">VK</a>
+          <a href="#" target="_blank" class="modal-link">Email</a>
+          <a href="#" target="_blank" class="modal-link">Telegram</a>
+          <a href="#" target="_blank" class="modal-link">VK</a>
         </div>
+      </div>
     </div>
-</div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
